@@ -1,3 +1,4 @@
+let needsLatAndLng = true;
 var map = L.map('mapid').setView([-8.0421584,-35.008676], 15);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
@@ -70,4 +71,14 @@ function toggleSelect(event) {
     //atualizar o meu input hidden com o valor selecionado
     const input = document.querySelector('[name="open_on_weekends"]')
     input.value = button.dataset.value
+}
+
+function validate(event) {
+    //não está finalizado
+    const lat = event.latlng.lat;
+    console.log(lat)
+    if(lat!=true) {
+        event.preventDefault()
+        alert('Selecione um ponto no mapa')
+    }
 }

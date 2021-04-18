@@ -41,7 +41,7 @@
 
         <main class="animate-appear with-sidebar">
            
-            <form action="">
+            <form action="save-orphanage" method="POST" onsubmit="validate(event)">
                 <fieldset>
                     <legend>Dados</legend>
 
@@ -105,8 +105,8 @@
                     <div class="input-block">
                         <label for="open_on_weekends">Atende fim de semana?</label>
                         <input
-                         id="open_window" 
-                         name="open_window"
+                         id="open_on_weekends" 
+                         name="open_on_weekends"
                          value="1"
                          type="hidden"
                          required
