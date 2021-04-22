@@ -4,7 +4,7 @@
 
  Projeto auxíliado pela Rocketseat.
 
-![home image](.github/image.png)
+![home image](.github/Image.png)
 
 ## Tecnologias
 
